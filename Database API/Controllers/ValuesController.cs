@@ -6,7 +6,9 @@ namespace Database_API.Controllers
     [Route("[controller]")]
     public class ValuesController : ControllerBase
     {
-      
+
+        ProductFactory productFactory = new ProductFactory();
+        IProduct iprod;
 
         private readonly ILogger<ValuesController> _logger;
 
@@ -15,6 +17,17 @@ namespace Database_API.Controllers
             _logger = logger;
         }
 
-     
+        [HttpGet("All")]
+        public IEnumerable<string> All(String Select)
+        {
+            //_logger.Log(LogLevel.Trace , Select);
+            //_logger.LogInformation(Select);
+
+            iprod = productFactory.GetType(Select);
+
+            return Type.getInstance().All(iprod.GetProduct());
+
+        }
+
     }
 }

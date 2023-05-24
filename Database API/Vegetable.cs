@@ -1,8 +1,8 @@
 ﻿namespace Database_API
 {
-    public class Vegetable: IType
+    public class Vegetable: IProduct
     {
-        string[] IType.GetType()
+        string[] IProduct.GetProduct()
         {
             throw new NotImplementedException();
         }

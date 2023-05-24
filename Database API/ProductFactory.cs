@@ -1,10 +1,10 @@
 ﻿namespace Database_API
 {
-    public class TypeInstance
+    public class ProductFactory
     {
-        public IType returnInstance;
+        public IProduct returnInstance;
 
-        public IType GetType(string Type)
+        public IProduct GetType(string Type)
         {
             if (Type.ToLower().Equals("fruit"))
             {
