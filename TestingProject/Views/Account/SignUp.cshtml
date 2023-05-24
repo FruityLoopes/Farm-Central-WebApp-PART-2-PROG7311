@@ -44,21 +44,21 @@
                                     <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                                 </div>
                                 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                            <form class="user">
-                                <div class="form-group">
-                                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control form-control-user", placeholder = "Name", required = "required" } })
-                                </div>
-                                <div class="form-group">
-                                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control form-control-user", placeholder = "Surname", required = "required" } })
-                                </div>
-                                <div class="form-group">
-                                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", placeholder = "Email", required = "required" } })
-                                </div>
-                                <div class="form-group">
-                                    @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", placeholder = "Password", required = "required" } })
-                                </div>
-                                <input type="submit" value="SignUp" class="btn btn-primary btn-user btn-block" />
-                            </form>
+                                <form class="user">
+                                    <div class="form-group">
+                                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control form-control-user", placeholder = "Name", required = "required" } })
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control form-control-user", placeholder = "Surname", required = "required" } })
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", placeholder = "Email", required = "required" } })
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", placeholder = "Password", required = "required" } })
+                                    </div>
+                                    <input type="submit" value="SignUp" class="btn btn-primary btn-user btn-block" />
+                                </form>
                                 <hr>
                                 <div class="text-center">
                                     @Html.ActionLink("Already have an account? Login!", "Login")
@@ -84,4 +84,12 @@
     <!-- Custom scripts for all pages-->
     <script src="~/js/sb-admin-2.min.js"></script>
 </body>
+
+<!--
+    This code was adapted from github
+    https://github.com/proyectojavier/TestChallengerCore
+    proyectojavier
+    https://github.com/proyectojavier
+    2023/05/24
+    -->
 </html>
